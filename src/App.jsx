@@ -62,22 +62,22 @@ function App() {
   
   return (
     <>
-      <div className="container mx-auto p-0 w-screen flex flex-col" style={{ height: "100vh" }}>
-        <div className="box1 flex flex-col bg-gray-100 px-2 py-4 gap-2" style={{ height: "40vh" }}>
-          <div style={{ height: "20vh" }} className="p-4 bg-gray-300 rounded-md text-right text-xl text-gray-700 min-h-[40px]">
+  <div class="w-full h-screen p-4 flex flex-col gap-4">
+
+        <div className="box1 flex-[0.4] flex flex-col bg-gray-100 px-2 py-4 gap-2" >
+          <div  className=" w-full flex-[0.4] p-4 bg-gray-300 rounded-md text-right text-xl text-gray-700 ">
           {Show.replace(/\*/g, "×").replace(/\//g, "÷")}
           </div>
           <input
-            style={{ height: "20vh" }}
+            
             readOnly
             type="text"
-            className="w-full text-2xl font-bold text-right p-4 bg-white rounded-md shadow-inner outline-none"
+            className="w-full flex-[0.6] text-2xl font-bold text-right p-4 bg-white rounded-md shadow-inner outline-none "
          value={Num.replace(/\*/g, "×").replace(/\//g, "÷")}
 
           />
         </div>
-        <div className="box2 w-screen grid grid-cols-4 gap-2 bg-gray-800 p-2"
-          style={{ height: "60vh" }}>
+        <div className="  box2 flex-[0.6] w-screen grid grid-cols-4 gap-2 bg-gray-800 p-2">
           <button onClick={reset} className='bg-green-500 h-full rounded-lg p-1'>C</button>
           <button onClick={calculateFactorial} className='bg-green-500 h-full rounded-lg p-1' >!</button>
           <button onClick={calculateSquare} className='bg-green-500 h-full rounded-lg p-1'>x²</button>
