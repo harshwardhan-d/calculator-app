@@ -77,34 +77,47 @@ function App() {
 
           />
         </div>
-        <div className="  box2 flex-[0.6] w-screen grid grid-cols-4 gap-2 bg-gray-800 p-2">
-          <button onClick={reset} className='bg-green-500 h-full rounded-lg p-1'>C</button>
-          <button onClick={calculateFactorial} className='bg-green-500 h-full rounded-lg p-1' >!</button>
-          <button onClick={calculateSquare} className='bg-green-500 h-full rounded-lg p-1'>x²</button>
-          <button onClick={() => { appendValue("/") }} className='bg-green-500 h-full rounded-lg p-1'>÷</button>
+        <div className="  box2  flex-[0.6] w-full h-full  bg-gray-800 ">
+         <div className="innerBox w-full h-full flex flex-col gap-2 p-2 ">
+        <div className="ib1 flex gap-2 flex-1 items-stretch">
+        <button onClick={reset} className='bg-green-500  rounded-lg p-1 flex-1'>C</button>
+          <button onClick={calculateFactorial} className='bg-green-500  rounded-lg p-1 flex-1' >!</button>
+          <button onClick={calculateSquare} className='bg-green-500  rounded-lg p-1 flex-1'>x²</button>
+          <button onClick={() => { appendValue("/") }} className='bg-green-500  rounded-lg p-1 flex-1'>÷</button>
+        </div>
 
-          <button onClick={() => { appendValue("7") }} className='bg-slate-200 h-full rounded-lg p-1'>7</button>
-          <button onClick={() => { appendValue("8") }} className='bg-slate-200 h-full rounded-lg p-1'>8</button>
-          <button onClick={() => { appendValue("9") }} className='bg-slate-200 h-full rounded-lg p-1'>9</button>
-          <button onClick={() => { appendValue("*") }} className='bg-green-500 h-full rounded-lg p-1'>x</button>
+<div className="ib2 flex gap-2 flex-1 items-stretch">
+<button onClick={() => { appendValue("7") }} className='bg-slate-200  rounded-lg p-1  flex-1'>7</button>
+          <button onClick={() => { appendValue("8") }} className='bg-slate-200  rounded-lg p-1 flex-1'>8</button>
+          <button onClick={() => { appendValue("9") }} className='bg-slate-200  rounded-lg p-1 flex-1'>9</button>
+          <button onClick={() => { appendValue("*") }} className='bg-green-500  rounded-lg p-1 flex-1'>x</button>
+</div>
+         
+         <div className="ib3 flex gap-2 flex-1 items-stretch">
+         <button onClick={() => { appendValue("4") }} className='bg-slate-200 rounded-lg p-1 flex-1'>4</button>
+          <button onClick={() => { appendValue("5") }} className='bg-slate-200 rounded-lg p-1 flex-1'>5</button>
+          <button onClick={() => { appendValue("6") }} className='bg-slate-200 rounded-lg p-1 flex-1'>6</button>
+          <button onClick={() => { appendValue("-") }} className='bg-green-500 rounded-lg p-1 flex-1'>-</button>
+         </div>
 
-          <button onClick={() => { appendValue("4") }} className='bg-slate-200 rounded-lg p-1'>4</button>
-          <button onClick={() => { appendValue("5") }} className='bg-slate-200 rounded-lg p-1'>5</button>
-          <button onClick={() => { appendValue("6") }} className='bg-slate-200 rounded-lg p-1'>6</button>
-          <button onClick={() => { appendValue("-") }} className='bg-green-500 rounded-lg p-1'>-</button>
+        <div className="ib4 flex gap-2 flex-1 items-stretch">
+        <button onClick={() => { appendValue("1") }} className='bg-slate-200  rounded-lg p-1 flex-1' >1</button>
+          <button onClick={() => { appendValue("2") }} className='bg-slate-200  rounded-lg p-1 flex-1'>2</button>
+          <button onClick={() => { appendValue("3") }} className='bg-slate-200  rounded-lg p-1 flex-1'>3</button>
+          <button onClick={() => { appendValue("+") }} className='bg-green-500  rounded-lg p-1 flex-1'>+</button>
+        </div>
 
-          <button onClick={() => { appendValue("1") }} className='bg-slate-200 h-full rounded-lg p-1' >1</button>
-          <button onClick={() => { appendValue("2") }} className='bg-slate-200 h-full rounded-lg p-1'>2</button>
-          <button onClick={() => { appendValue("3") }} className='bg-slate-200 h-full rounded-lg p-1'>3</button>
-          <button onClick={() => { appendValue("+") }} className='bg-green-500 h-full rounded-lg p-1'>+</button>
-
-          <button onClick={() => { appendValue(".") }} className='bg-slate-200 h-full rounded-lg p-1'>.</button>
-          <button onClick={() => { appendValue("0") }} className='bg-slate-200 h-full rounded-lg p-1'>0</button>
-          <button onClick={cut} className='bg-slate-200 h-full rounded-lg p-1'>cut</button>
+     <div className="ib5 flex gap-2 flex-1 items-stretch">
+     <button onClick={() => { appendValue(".") }} className='bg-slate-200  rounded-lg p-1 flex-1'>.</button>
+          <button onClick={() => { appendValue("0") }} className='bg-slate-200  rounded-lg p-1 flex-1'>0</button>
+          <button onClick={cut} className='bg-slate-200  rounded-lg p-1 flex-1'>cut</button>
           <button
           onClick={evaluate}
-            className="bg-green-500 h-full rounded-lg p-1"
+            className="bg-green-500  rounded-lg p-1 flex-1"
           >=</button>
+     </div>
+
+         </div>
         </div>
       </div>
     </>
